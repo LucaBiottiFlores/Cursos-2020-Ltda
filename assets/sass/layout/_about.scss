@@ -1,0 +1,225 @@
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid $black;
+    margin: 1em .5em;
+}
+
+
+
+.about__card {
+    margin: .5em;
+  
+    &-img {
+        border-radius: 50%;
+        border: 1px solid $black;
+        width: 170px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &-title {
+        font-family: $poppins;
+        font-weight: $bold;
+        text-align: center;
+    }
+    &-icons {
+        display:flex;
+        justify-content: center;
+    }
+    &-text {
+        font-family: $poppins;
+        font-weight: $regular;
+        color: $black;
+        margin: .3em;
+        line-height: 2em;
+        font-size: $small;
+    }
+    &-cursos{
+        font-family: $poppins;
+        font-weight: $bold;
+        background-color: $normalgray;
+        color: $white;
+        text-align: center;
+    }
+    &-list {
+        margin-left: 1.5em;
+        margin-top: 1em;
+        a {
+            text-decoration: none;
+            font-family: $poppins;
+            font-weight: $regular;
+            font-size: $small;
+        }
+        li{
+            padding-top: .3em;
+        }
+    }
+    &-animation {
+        margin-top: 3em;
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .about{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid $black;
+        margin: .5em .5em;
+    }
+    
+    .about__card {
+        margin: .5em;
+      
+        &-img {
+            border-radius: 50%;
+            border: 1px solid $black;
+            margin-left: 16em;
+            margin-right: auto;
+        }
+    
+        &-title {
+            font-family: $poppins;
+            font-weight: $bold;
+            text-align: center;
+        }
+        &-icons {
+            display:flex;
+            justify-content: center;
+        }
+        &-text {
+            font-family: $poppins;
+            font-weight: $regular;
+            color: $black;
+            margin: .3em;
+            line-height: 2em;
+            font-size: $small;
+        }
+        &-cursos{
+            font-family: $poppins;
+            font-weight: $bold;
+            background-color: $normalgray;
+            color: $white;
+            text-align: center;
+        }
+        &-list {
+            margin-left: 1.5em;
+            margin-top: 1em;
+            a {
+                text-decoration: none;
+                font-family: $poppins;
+                font-weight: $regular;
+                font-size: $small;
+            }
+            li{
+                padding-top: .3em;
+            }
+        }
+        &-animation {
+            margin-top: 3em;
+            
+        }
+    }
+}
+
+// ANIMATIONS
+
+
+// Animation < / >
+
+.animation_slash {
+    
+    animation: myanimation 3s ease-in-out infinite;
+}
+
+@keyframes myanimation {
+    
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(152px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+// Animation Engranaje
+
+.animation__engranaje {
+    animation: engrAnimation 3s ease-in-out infinite;
+    
+}
+
+@keyframes engrAnimation {
+    0% { 
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;} 
+        
+    100% { 
+        transform: rotate(360deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+// Animation Center
+
+.animation__center {
+    animation: centerAnimation 3s ease-in-out infinite;
+    
+}
+
+@keyframes centerAnimation {
+    0% { 
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;} 
+        
+    100% { 
+        transform: rotate(360deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+// Animated SVG Size
+
+.about__card-animation {
+    width: 260px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px) {
+    
+.about__card-animation {
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}

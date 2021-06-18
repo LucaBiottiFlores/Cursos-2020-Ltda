@@ -1,0 +1,12 @@
+//Buttons Styles
+
+//Primary Button
+
+.primary-btn {
+    border-radius: 0%;
+    background-color: $orange-primary;
+    color: $black;
+    &:hover {
+        background-color: $white;
+    }
+}
